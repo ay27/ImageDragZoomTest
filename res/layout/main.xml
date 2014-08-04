@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="100dp"
+               android:id="@+id/layout2_imageAbove"
+               android:src="@drawable/ttt"
+               android:scaleType="matrix"
+               android:background="@android:color/holo_red_light"
+            />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+                  android:background="@android:color/white">
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:text="这是分割条"
+                  android:gravity="center"
+                  android:textSize="20sp"
+                android:background="@android:color/holo_purple"/>
+    </LinearLayout>
+    <FrameLayout
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+            android:background="@android:color/black">
+        <com.example.ImageDragZoomTest.BottomImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/ttt"
+                   android:background="@android:color/black"
+                   android:id="@+id/layout2_bottomView"
+                   android:layout_gravity="center_horizontal"
+                   android:adjustViewBounds="true"
+                />
+        <com.example.ImageDragZoomTest.ChooseArea android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                                   android:id="@+id/layout2_topView"
+                                                   android:adjustViewBounds="true"
+                                                   android:layout_gravity="center_horizontal"
+                />
+
+    </FrameLayout>
+</LinearLayout>
